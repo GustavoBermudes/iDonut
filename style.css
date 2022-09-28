@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #434b56;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.UpKey{
+    background-color: #f17897;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 15px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    cursor: pointer;
+}
+.UpKey div{
+position: absolute;
+height: 30px;
+width: 30px;
+border-top: 6px solid #fff;
+border-left: 6px solid #fff;
+transform: rotate(45deg);
+left: 9.7px;
+top: 15px;
+}
+---------Menu-------------------------*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #434b56;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+ color: #f17897;
+ font-size: 1.2em;
+ font-weight: 900;
+}
+.content .textBox p{
+    padding: 20px 0 0 0;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #f17897;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox{
+    width: 530px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 800px;
+}
+.thumb{
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f17897;
+    clip-path: circle(700px at right 850px);
+}
+
+/*--------------------Produtos-------------------------*/
+
+.content_Pro{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content_Pro .textBox_Pro{
+    position: relative;
+    max-width: 600px;
+}
+.content_Pro .textBox_Pro h2{
+    color: #434b56;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content_Pro .textBox_Pro h2 span{
+ color: #f17897;
+ font-size: 1.2em;
+ font-weight: 900;
+}
+.content_Pro .textBox_Pro p{
+    padding: 20px 0 0 0;
+}
+.content_Pro .textBox_Pro a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #f17897;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content_Pro .imgBox_Pro{
+    width: 530px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-bottom: 70px;
+}
+.content_Pro .imgBox_Pro img{
+    max-width: 800px;
+}
+.thumb_Pro{
+    position:absolute;
+    left: 75%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb_Pro li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.thumb_Pro li:hover{
+    transform: translateY(-15px);
+}
+.circle_Pro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f17897;
+    clip-path: circle(700px at right 50%);
+}
+@media(max-width:1000px){
+    .content .imgBox{
+        padding-right: 3px;
+        margin-top: 60px;
+        width: 1030px;
+    }
+    .circle_Pro{
+        clip-path: circle(400px at right 600px);
+    }
+    .circle{
+        clip-path: circle(400px at right 600px);
+    }
+    .content .textBox{
+        left: 40px;
+    }
+    .content .textBox h2{
+        color: #434b56;
+        font-size: 1.6em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    .content .textBox h2 span{
+     color: #f17897;
+     font-size: 1.7em;
+     font-weight: 900;
+    }
+    section{
+        padding: 20px;
+    }
+    header .logo{
+        width: 46px;
+        height: 50px;
+    }
+    header{
+        padding: 20px 40px;
+    }
+    header ul li a{
+        font-size: 0px;
+        visibility: hidden;
+    }
+}
+@media(max-width:750px){
+    .content .imgBox{
+        padding-right: 3px;
+        margin-top: 60px;
+        width: 1030px;
+    }
+    .circle_Pro{
+        clip-path: circle(300px at right 400px);
+    }
+    .circle{
+        clip-path: circle(300px at right 400px);
+    }
+    .content .textBox{
+        left: 40px;
+    }
+    .content .textBox h2{
+        color: #434b56;
+        font-size: 2.2em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    .content .textBox h2 span{
+     color: #f17897;
+     font-size: 2em;
+     font-weight: 900;
+    }
+    section{
+        padding: 20px;
+    }
+    header .logo{
+        width: 46px;
+        height: 50px;
+    }
+    header{
+        padding: 20px 40px;
+    }
+    header ul li a{
+        font-size: 0px;
+        visibility: hidden;
+    }
+}
+@media(max-width:700px){
+    .circle_Pro{
+        clip-path: circle(200px at right 400px);
+    }
+    .content .imgBox{
+        padding-right: 3px;
+        margin-top: 60px;
+        width: 1030px;
+    }
+    .circle{
+        clip-path: circle(200px at right 400px);
+    }
+    .content .textBox{
+        left: 40px;
+    }
+    .content .textBox h2{
+        color: #434b56;
+        font-size: 1em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    .content .textBox h2 span{
+     color: #f17897;
+     font-size: 1.6em;
+     font-weight: 900;
+    }
+    section{
+        padding: 20px;
+    }
+    header{
+        padding: 10px 3px;
+    }
+}
